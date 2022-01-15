@@ -346,17 +346,78 @@ body{
 /* For Mobile */
 
 @media only screen and (max-width: 844px) {
-    .main-container {
+    .main-container{
         width: 100%;
+        margin: 0px;
     }
-    .logo h2 {
-        font-size: 35px;
-
-    } 
+    .header-area{
+        justify-content: center;
+    }
     .banner-area{
         flex-direction: column;
     }
+
+    .banner-button{
+        margin: 0 auto;
+    }
+
     .banner-left{
         order: 2;
+        margin: 0px 20px;
+        margin-top: 30px;
     }
-  }
+    .banner-left h1{
+        line-height: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    }
+
+    .banner-left p{
+        text-align: center;
+}
+    }
+
+    .banner-right{
+        order: 1;
+        margin: 0;
+        
+    }
+
+    .banner-right img {
+        Width: 100%;
+        Height: 100%;
+    }
+
+    .banner-left p{
+        width: 100%;
+    }
+
+    .all-products {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;  
+        width: 100%;
+    }
+
+    .main-consultation{
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+    .consultation-left h2, h3{
+        text-align: center;
+    }
+    .consultation-left p{
+        text-align: center;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .main-footer{
+        min-height: 420px;
+    }
+    .see-more{
+        width: 90%;
+    }
+}
