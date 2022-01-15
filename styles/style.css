@@ -337,16 +337,79 @@ body{
 
 /* For Tablet */
 
-/* @media only screen and (max-width: 844px) {
+@media (min-width:769px) and (max-width: 1199px) {
     body {
-      background-color: red;
+    
     }
-  } */
+    .header-area{
+        justify-content: center;
+    }
+    .banner-area{
+        flex-direction: column;
+
+    }
+    .banner-button{
+        margin: 0 auto;
+    }
+    .banner-left{
+        order: 2;
+        margin: 0px 20px;
+        margin-top: 30px;
+    }
+
+    .banner-left h1{
+        line-height: 50px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .banner-left p{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .banner-right{
+        order: 1;
+        margin: 0;
+        text-align: center;
+        
+    }
+
+    .banner-right img {
+        Width: 60%;
+        Height: 60%;
+    }
+
+
+    .all-products{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    .see-more{
+        width: 90%;
+    }
+    .consultation-area{
+        margin: 100px 15px 0px 15px; 
+    }
+    .main-consultation{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 40px;
+        padding: 100px 0px;
+        flex-direction: column;
+    }
+    .consultation-left {
+        text-align: center;
+    }
+  }
 
 
 /* For Mobile */
 
-@media (max-width:480px) {
+@media (max-width:768px) {
     
     .main-container{
         width: 100%;
@@ -384,13 +447,14 @@ body{
     
     .banner-right{
         order: 1;
-        margin: 0;
+        margin: 0px;
+        text-align: center;
         
     }
 
     .banner-right img {
-        Width: 100%;
-        Height: 100%;
+        Width: 60%;
+        Height: 60%;
     }
 
 
@@ -413,7 +477,7 @@ body{
     }
 
 
-    .consultation-left h2, h3{
+    .consultation-left h3{
         text-align: center;
     }
 
