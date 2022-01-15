@@ -341,11 +341,15 @@ body{
     body {
     
     }
+    .logo h2{
+        font-size: 40px;
+    }
     .header-area{
         justify-content: center;
     }
     .banner-area{
         flex-direction: column;
+        align-items: center;
 
     }
     .banner-button{
@@ -365,7 +369,6 @@ body{
 
     .banner-left p{
         text-align: center;
-        width: 100%;
     }
     
     .banner-right{
@@ -376,8 +379,8 @@ body{
     }
 
     .banner-right img {
-        Width: 60%;
-        Height: 60%;
+        Width: 300px;
+        Height: 282px;
     }
 
 
@@ -386,6 +389,7 @@ body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
+        column-gap: 20px;
     }
     .see-more{
         width: 90%;
