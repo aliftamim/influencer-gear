@@ -10,7 +10,7 @@ body{
 }
 
 .main-container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -217,6 +217,7 @@ body{
     margin-top: 100px;
     background-color: #F1F1F1;
     border-radius: 5px;
+    
 }
 
 .main-consultation{
@@ -345,14 +346,17 @@ body{
 
 /* For Mobile */
 
-@media only screen and (max-width: 844px) {
+@media (max-width:480px) {
+    
     .main-container{
         width: 100%;
         margin: 0px;
     }
+
     .header-area{
         justify-content: center;
     }
+
     .banner-area{
         flex-direction: column;
     }
@@ -366,19 +370,18 @@ body{
         margin: 0px 20px;
         margin-top: 30px;
     }
+
     .banner-left h1{
         line-height: 50px;
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
-    }
-
     }
 
     .banner-left p{
         text-align: center;
-}
+        width: 100%;
     }
-
+    
     .banner-right{
         order: 1;
         margin: 0;
@@ -390,9 +393,6 @@ body{
         Height: 100%;
     }
 
-    .banner-left p{
-        width: 100%;
-    }
 
     .all-products {
         grid-template-columns: repeat(1, 1fr);
@@ -400,14 +400,23 @@ body{
         width: 100%;
     }
 
+    .consultation-area{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .main-consultation{
         flex-direction: column;
         row-gap: 50px;
         align-items: center;
+        padding: 70px 0px;
     }
+
+
     .consultation-left h2, h3{
         text-align: center;
     }
+
     .consultation-left p{
         text-align: center;
         width: 250px;
@@ -415,8 +424,9 @@ body{
     }
 
     .main-footer{
-        min-height: 420px;
+        min-height: 160px;
     }
+
     .see-more{
         width: 90%;
     }
